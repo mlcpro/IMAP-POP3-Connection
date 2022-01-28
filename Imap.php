@@ -84,6 +84,7 @@ class Imap
 
     $this->response['status'] = 'Success';
     $this->response['message'] = 'Connected';
+    $this->response['mailbox'] = $this->host;
     imap_close($this->connection);
     exit;
   }
