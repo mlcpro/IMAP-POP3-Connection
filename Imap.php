@@ -75,7 +75,7 @@ class Imap
   
   private function connect()
   {
-    echo $this->host . $this->protocol . "\n";
+    echo 'Trying to... ' . $this->host . $this->protocol . "\n";
     error_reporting('E_ALL & ~E_NOTICE');
     $this->connection = imap_open('{' .  $this->host . $this->protocol . '}', $this->username, $this->password);
     if (!preg_match('/Resource\sid\s.+/', (string) $this->connection)) {
