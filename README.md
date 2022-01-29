@@ -12,7 +12,9 @@ php index.php
 
 Test the connection manually in the shell
 -------
-```php -r "print_r(imap_open('{host:993/imap/ssl/novalidate-cert}', 'user', 'password'));"```
+```
+php -r "print_r(imap_open('{host:993/imap/ssl/novalidate-cert}', 'user', 'password'));"
+```
 
 Credit
 -------
